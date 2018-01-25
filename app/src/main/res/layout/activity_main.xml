@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.varun.calculator.CalculatorActivity">
+
+    <Button
+        android:id="@+id/digit0"
+        style="@style/WidthHeight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="212dp"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/digit1"
+        style="@style/WidthHeight"
+        android:layout_alignBaseline="@+id/digit0"
+        android:layout_alignBottom="@+id/digit0"
+        android:layout_centerHorizontal="true"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/digit2"
+        style="@style/WidthHeight"
+        android:text="2"
+        android:layout_above="@+id/digit5"
+        android:layout_alignLeft="@+id/digit5"
+        android:layout_alignStart="@+id/digit5" />
+
+    <Button
+        android:id="@+id/digit3"
+        style="@style/WidthHeight"
+        android:text="3"
+        android:layout_below="@+id/digit0"
+        android:layout_alignLeft="@+id/digit0"
+        android:layout_alignStart="@+id/digit0" />
+
+    <Button
+        android:id="@+id/digit4"
+        style="@style/WidthHeight"
+        android:text="4"
+        android:layout_below="@+id/digit1"
+        android:layout_alignLeft="@+id/digit1"
+        android:layout_alignStart="@+id/digit1" />
+
+    <Button
+        android:id="@+id/digit5"
+        style="@style/WidthHeight"
+        android:layout_alignBaseline="@+id/digit4"
+        android:layout_alignBottom="@+id/digit4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/digit6"
+        style="@style/WidthHeight"
+        android:layout_alignLeft="@+id/digit3"
+        android:layout_alignStart="@+id/digit3"
+        android:layout_below="@+id/digit3"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/digit7"
+        style="@style/WidthHeight"
+        android:text="7"
+        android:layout_below="@+id/digit4"
+        android:layout_alignLeft="@+id/digit1"
+        android:layout_alignStart="@+id/digit1" />
+
+
+    <Button
+        android:id="@+id/digit8"
+        style="@style/WidthHeight"
+        android:layout_alignBaseline="@+id/digit7"
+        android:layout_alignBottom="@+id/digit7"
+        android:layout_alignLeft="@+id/digit2"
+        android:layout_alignStart="@+id/digit2"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/digit9"
+        style="@style/WidthHeight"
+        android:text="9"
+        android:layout_below="@+id/digit6"
+        android:layout_alignLeft="@+id/digit6"
+        android:layout_alignStart="@+id/digit6" />
+
+    <Button
+        android:id="@+id/decimalbutton"
+        style="@style/WidthHeight"
+        android:layout_alignLeft="@+id/digit7"
+        android:layout_alignStart="@+id/digit7"
+        android:layout_below="@+id/digit7"
+        android:text="." />
+
+    <Button
+        android:id="@+id/enterbutton"
+        style="@style/WidthHeight"
+        android:text="Enter"
+        android:layout_below="@+id/digit8"
+        android:layout_alignLeft="@+id/digit8"
+        android:layout_alignStart="@+id/digit8" />
+
+    <Button
+        android:id="@+id/deletebutton"
+        style="@style/WidthHeight"
+        android:layout_alignLeft="@+id/digit9"
+        android:layout_alignStart="@+id/digit9"
+        android:layout_below="@+id/digit9"
+        android:text="Del" />
+
+    <Button
+        android:id="@+id/addbutton"
+        style="@style/WidthHeight"
+        android:layout_alignEnd="@+id/decimalbutton"
+        android:layout_alignRight="@+id/decimalbutton"
+        android:layout_below="@+id/decimalbutton"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/subbutton"
+        style="@style/WidthHeight"
+        android:layout_alignLeft="@+id/enterbutton"
+        android:layout_alignStart="@+id/enterbutton"
+        android:layout_below="@+id/enterbutton"
+        android:text="-"
+        />
+
+    <Button
+        android:id="@+id/mulbutton"
+        style="@style/WidthHeight"
+        android:text="*"
+        android:layout_below="@+id/deletebutton"
+        android:layout_alignLeft="@+id/deletebutton"
+        android:layout_alignStart="@+id/deletebutton" />
+
+    <Button
+        android:id="@+id/divbutton"
+        style="@style/WidthHeight"
+        android:layout_alignLeft="@+id/addbutton"
+        android:layout_alignStart="@+id/addbutton"
+        android:layout_below="@+id/addbutton"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/dropbutton"
+        style="@style/WidthHeight"
+        android:layout_alignLeft="@+id/subbutton"
+        android:layout_alignStart="@+id/subbutton"
+        android:layout_below="@+id/subbutton"
+        android:text="Drop" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/WidthHeight"
+        android:layout_marginTop="19dp"
+        android:text="Number 1:"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/digit1"
+        android:layout_toStartOf="@+id/digit1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/WidthHeight"
+        android:layout_marginTop="17dp"
+        android:text="Number 2:"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/WidthHeight"
+        android:layout_marginTop="22dp"
+        android:text="Number 3:"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/WidthHeight"
+        android:text="Number 4:"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+
+    <TextView
+        android:id="@+id/item1textView"
+        style="@style/WidthHeight"
+        android:text="Value1"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toLeftOf="@+id/digit2"
+        android:layout_toStartOf="@+id/digit2" />
+
+    <TextView
+        android:id="@+id/item2textView"
+        style="@style/WidthHeight"
+        android:layout_alignLeft="@+id/item1textView"
+        android:layout_alignStart="@+id/item1textView"
+        android:layout_alignTop="@+id/textView2"
+        android:text="Value2" />
+
+    <TextView
+        android:id="@+id/item3textView"
+        style="@style/WidthHeight"
+        android:layout_above="@+id/textView6"
+        android:layout_alignEnd="@+id/item2textView"
+        android:layout_alignRight="@+id/item2textView"
+        android:text="Value3" />
+
+    <TextView
+        android:id="@+id/item4textView"
+        style="@style/WidthHeight"
+        android:layout_alignEnd="@+id/item3textView"
+        android:layout_alignRight="@+id/item3textView"
+        android:layout_alignTop="@+id/textView6"
+        android:text="Value4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/WidthHeight"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="13dp"
+        android:text="Enter Number:" />
+
+    <TextView
+        android:id="@+id/item5textView"
+        style="@style/WidthHeight"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/item4textView"
+        android:layout_alignStart="@+id/item4textView"
+        android:text="Value" />
+
+
+</RelativeLayout>
